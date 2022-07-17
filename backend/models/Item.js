@@ -5,7 +5,7 @@ var User = mongoose.model("User");
 
 var ItemSchema = new mongoose.Schema(
   {
-    slug: { type: String, lowercase: true, unique: true },
+    slug: { type: String, lowercase: true, unique: true, required: true },
     title: String,
     description: String,
     image: String,
